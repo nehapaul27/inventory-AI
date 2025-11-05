@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simple Inventory System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧾 Simple Inventory</h1>
+
+  <div class="input-box">
+    <input id="name" placeholder="Product Name">
+    <input id="qty" type="number" placeholder="Quantity" min="1">
+    <input id="price" type="number" placeholder="Price" min="0">
+    <button id="add">Add</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Product</th><th>Quantity</th><th>Price</th><th>Action</th></tr>
+    </thead>
+    <tbody id="list"></tbody>
+  </table>
+  
+<div class="ai-box">
+  <h3>🤖 AI Suggestion</h3>
+  <button id="ai-check">Check Low Stock</button>
+  <p id="ai-result"></p>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
